@@ -1,0 +1,16 @@
+<mat-toolbar class="header" color="primary">
+  <div fxHide.gt-xs fxFlex fxLayoutAlign="start start">
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+  <div fxFlex fxLayoutAlign="start start" fxHide.lt-sm>
+    <a routerLink="/home/shop">SHOP</a>
+    <a routerLink="/home/contact-us">KONTAKT OS</a>
+  </div>
+  <div fxFlex fxLayoutAlign="center center">
+    <a routerLink="/">alt til hygge</a>
+  </div>
+  <div fxFlex fxLayoutAlign="end end"><a routerLink="/">CART</a></div>
+</mat-toolbar>
