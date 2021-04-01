@@ -1,8 +1,38 @@
+$primary: #5cb85c;
+
 .banner-img {
   width: 100%;
 }
+.exclusive-products {
+  padding-top: 30px;
+}
 
-.categories-banner{
+.h2-text {
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 0.07em;
+  font-weight: 400;
+}
+.h3-text {
+  text-align: center;
+  color: $primary;
+  letter-spacing: 0.07em;
+  font-weight: 400;
+}
+.categories-banner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.categories-item {
+  width: 350px;
+  height: 150px;
+}
+.category-img {
   width: 100%;
   height: 100%;
 }

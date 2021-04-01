@@ -8,6 +8,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Output() sidenavToggle = new EventEmitter<void>();
+  @Output() timedOutCloser: any = new EventEmitter<void>();
 
   constructor() {}
 
@@ -15,5 +16,18 @@ export class HeaderComponent implements OnInit {
 
   onToggleSidenav(): void {
     this.sidenavToggle.emit();
+  }
+
+  mouseEnter(trigger: any) {
+    if (this.timedOutCloser) {
+      clearTimeout(this.timedOutCloser);
+    }
+    trigger.openMenu();
+  }
+
+  mouseLeave(trigger: any) {
+    this.timedOutCloser = setTimeout(() => {
+      trigger.closeMenu();
+    }, 50);
   }
 }
