@@ -1,12 +1,42 @@
-<div class="container" fxLayout="row" fxLayoutGap="30px">
-  <div class="product-thumbnail">
+<div
+  class="container"
+  fxLayout="row"
+  fxLayoutGap="30px"
+  fxLayoutAlign="center center"
+>
+  <div
+    class="product-thumbnail"
+    (mouseenter)="toggle()"
+    (mouseleave)="toggle()"
+  >
     <div class="product-img">
       <div>
         <p class="img-text">200 x 400</p>
       </div>
+
+      <div
+        class="product-icons"
+        fxLayout="column"
+        fxLayoutGap="10px"
+        fxLayoutAlign="end end"
+        [@popOverState]="stateName"
+      >
+        <mat-icon class="material-icons material-icons-outlined">
+          shopping_cart
+        </mat-icon>
+        <mat-icon class="material-icons material-icons-outlined"
+          >favorite_border</mat-icon
+        >
+        <mat-icon class="material-icons material-icons-outlined"
+          >search</mat-icon
+        >
+        <mat-icon class="material-icons material-icons-outlined"
+          >refresh</mat-icon
+        >
+      </div>
     </div>
     <div class="product-footer">
-      <span fxLayout="row" fxLayoutAlign="start">
+      <span fxLayout="row" fxLayoutAlign="start" class="star-icon">
         <a>
           <mat-icon>star_rate</mat-icon>
         </a>
@@ -24,18 +54,43 @@
         </a>
       </span>
       <p class="product-title">Product Title</p>
-      <p class="product-price">$200.00</p>
+      <p class="product-price">200,00 kr</p>
     </div>
   </div>
 
-  <div class="product-thumbnail">
+  <div
+    class="product-thumbnail"
+    (mouseenter)="toggle()"
+    (mouseleave)="toggle()"
+  >
     <div class="product-img">
       <div>
         <p class="img-text">200 x 400</p>
       </div>
+
+      <div
+        class="product-icons"
+        fxLayout="column"
+        fxLayoutGap="10px"
+        fxLayoutAlign="end end"
+        [@popOverState]="stateName"
+      >
+        <mat-icon class="material-icons material-icons-outlined">
+          shopping_cart
+        </mat-icon>
+        <mat-icon class="material-icons material-icons-outlined"
+          >favorite_border</mat-icon
+        >
+        <mat-icon class="material-icons material-icons-outlined"
+          >search</mat-icon
+        >
+        <mat-icon class="material-icons material-icons-outlined"
+          >refresh</mat-icon
+        >
+      </div>
     </div>
     <div class="product-footer">
-      <span fxLayout="row" fxLayoutAlign="start">
+      <span fxLayout="row" fxLayoutAlign="start" class="star-icon">
         <a>
           <mat-icon>star_rate</mat-icon>
         </a>
@@ -53,18 +108,43 @@
         </a>
       </span>
       <p class="product-title">Product Title</p>
-      <p class="product-price">$200.00</p>
+      <p class="product-price">200,00 kr</p>
     </div>
   </div>
 
-  <div class="product-thumbnail">
+  <div
+    class="product-thumbnail"
+    (mouseenter)="toggle()"
+    (mouseleave)="toggle()"
+  >
     <div class="product-img">
       <div>
         <p class="img-text">200 x 400</p>
       </div>
+
+      <div
+        class="product-icons"
+        fxLayout="column"
+        fxLayoutGap="10px"
+        fxLayoutAlign="end end"
+        [@popOverState]="stateName"
+      >
+        <mat-icon class="material-icons material-icons-outlined">
+          shopping_cart
+        </mat-icon>
+        <mat-icon class="material-icons material-icons-outlined"
+          >favorite_border</mat-icon
+        >
+        <mat-icon class="material-icons material-icons-outlined"
+          >search</mat-icon
+        >
+        <mat-icon class="material-icons material-icons-outlined"
+          >refresh</mat-icon
+        >
+      </div>
     </div>
     <div class="product-footer">
-      <span fxLayout="row" fxLayoutAlign="start">
+      <span fxLayout="row" fxLayoutAlign="start" class="star-icon">
         <a>
           <mat-icon>star_rate</mat-icon>
         </a>
@@ -82,18 +162,43 @@
         </a>
       </span>
       <p class="product-title">Product Title</p>
-      <p class="product-price">$200.00</p>
+      <p class="product-price">200,00 kr</p>
     </div>
   </div>
 
-  <div class="product-thumbnail">
+  <div
+    class="product-thumbnail"
+    (mouseenter)="toggle()"
+    (mouseleave)="toggle()"
+  >
     <div class="product-img">
       <div>
         <p class="img-text">200 x 400</p>
       </div>
+
+      <div
+        class="product-icons"
+        fxLayout="column"
+        fxLayoutGap="10px"
+        fxLayoutAlign="end end"
+        [@popOverState]="stateName"
+      >
+        <mat-icon class="material-icons material-icons-outlined">
+          shopping_cart
+        </mat-icon>
+        <mat-icon class="material-icons material-icons-outlined"
+          >favorite_border</mat-icon
+        >
+        <mat-icon class="material-icons material-icons-outlined"
+          >search</mat-icon
+        >
+        <mat-icon class="material-icons material-icons-outlined"
+          >refresh</mat-icon
+        >
+      </div>
     </div>
     <div class="product-footer">
-      <span fxLayout="row" fxLayoutAlign="start">
+      <span fxLayout="row" fxLayoutAlign="start" class="star-icon">
         <a>
           <mat-icon>star_rate</mat-icon>
         </a>
@@ -111,12 +216,17 @@
         </a>
       </span>
       <p class="product-title">Product Title</p>
-      <p class="product-price">$200.00</p>
+      <p class="product-price">200,00 kr</p>
     </div>
   </div>
 </div>
 
-<div class="container" fxLayout="row" fxLayoutGap="30px">
+<div
+  class="container"
+  fxLayout="row"
+  fxLayoutGap="30px"
+  fxLayoutAlign="center center"
+>
   <div class="product-thumbnail">
     <div class="product-img">
       <div>
@@ -124,7 +234,7 @@
       </div>
     </div>
     <div class="product-footer">
-      <span fxLayout="row" fxLayoutAlign="start">
+      <span fxLayout="row" fxLayoutAlign="start" class="star-icon">
         <a>
           <mat-icon>star_rate</mat-icon>
         </a>
@@ -142,7 +252,7 @@
         </a>
       </span>
       <p class="product-title">Product Title</p>
-      <p class="product-price">$200.00</p>
+      <p class="product-price">200,00 kr</p>
     </div>
   </div>
 
@@ -153,7 +263,7 @@
       </div>
     </div>
     <div class="product-footer">
-      <span fxLayout="row" fxLayoutAlign="start">
+      <span fxLayout="row" fxLayoutAlign="start" class="star-icon">
         <a>
           <mat-icon>star_rate</mat-icon>
         </a>
@@ -171,7 +281,7 @@
         </a>
       </span>
       <p class="product-title">Product Title</p>
-      <p class="product-price">$200.00</p>
+      <p class="product-price">200,00 kr</p>
     </div>
   </div>
 
@@ -182,7 +292,7 @@
       </div>
     </div>
     <div class="product-footer">
-      <span fxLayout="row" fxLayoutAlign="start">
+      <span fxLayout="row" fxLayoutAlign="start" class="star-icon">
         <a>
           <mat-icon>star_rate</mat-icon>
         </a>
@@ -200,7 +310,7 @@
         </a>
       </span>
       <p class="product-title">Product Title</p>
-      <p class="product-price">$200.00</p>
+      <p class="product-price">200,00 kr</p>
     </div>
   </div>
 
@@ -211,7 +321,7 @@
       </div>
     </div>
     <div class="product-footer">
-      <span fxLayout="row" fxLayoutAlign="start">
+      <span fxLayout="row" fxLayoutAlign="start" class="star-icon">
         <a>
           <mat-icon>star_rate</mat-icon>
         </a>
@@ -229,7 +339,7 @@
         </a>
       </span>
       <p class="product-title">Product Title</p>
-      <p class="product-price">$200.00</p>
+      <p class="product-price">200,00 kr</p>
     </div>
   </div>
 </div>

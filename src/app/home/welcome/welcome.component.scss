@@ -9,6 +9,7 @@ $primary: #5cb85c;
 }
 .exclusive-products {
   padding-top: 30px;
+  min-height: 800px;
 }
 .h2-text {
   text-align: center;
@@ -39,16 +40,46 @@ $primary: #5cb85c;
   padding-top: 30px;
   padding-bottom: 30px;
   width: 100%;
-  height: 100%;
 }
 
 .categories-item {
+  background-color: rgb(233, 233, 233);
   width: 350px;
-  height: 150px;
+  height: 200px;
 }
-.category-img {
+
+.category.img {
+  background-color: gray;
+  width: 75px;
+  height: 75px;
+  padding: 15px;
+}
+
+.category-txt {
   width: 100%;
   height: 100%;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px;
+}
+
+.wrapper {
+  max-height: 100%;
+}
+
+.bg-img {
+  max-width: 100%;
+  max-height: 80%;
+
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 ::ng-deep .mat-tab-group.mat-primary .mat-ink-bar {

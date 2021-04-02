@@ -9,13 +9,22 @@
   fxLayoutGap="15px"
 >
   <div class="categories-item" fxLayout fxLayoutGap="15px">
-    <img class="category-img" src="../../../assets/images/categories/11.jpg" />
+    <div class="category-img" fxLayoutAlign="start center">
+      <p>Test</p>
+    </div>
+    <div class="category-txt" fxLayoutAlign="end center">
+      <p>350 x 200</p>
+    </div>
   </div>
   <div class="categories-item" fxLayout fxLayoutGap="15px">
-    <img class="category-img" src="../../../assets/images/categories/11.jpg" />
+    <div class="category-txt" fxLayoutAlign="end center">
+      <p>350 x 150</p>
+    </div>
   </div>
   <div class="categories-item" fxLayout fxLayoutGap="15px">
-    <img class="category-img" src="../../../assets/images/categories/11.jpg" />
+    <div class="category-txt" fxLayoutAlign="end center">
+      <p>350 x 150</p>
+    </div>
   </div>
 </section>
 
@@ -28,7 +37,7 @@
   <h3 class="h3-text">Ekslusive Produkter</h3>
   <h2 class="h2-text">Udvalgte Produkter</h2>
 
-  <mat-tab-group mat-align-tabs="center" color="primary">
+  <mat-tab-group mat-align-tabs="center">
     <mat-tab label="TILBUD">
       <app-product-thumbnail></app-product-thumbnail>
     </mat-tab>
@@ -39,4 +48,13 @@
       <app-product-thumbnail></app-product-thumbnail>
     </mat-tab>
   </mat-tab-group>
+
+  <br />
+  <br />
+</section>
+
+<section>
+  <div class="wrapper">
+    <!-- <img class="bg-img" src="../../../assets/images/puzzles/welcome_1.jpg" /> -->
+  </div>
 </section>
