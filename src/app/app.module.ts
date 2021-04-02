@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-
 // COMPONENTS
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './navigation/sidenav/sidenav.component';
