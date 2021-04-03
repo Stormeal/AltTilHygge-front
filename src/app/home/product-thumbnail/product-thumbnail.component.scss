@@ -1,7 +1,9 @@
 $primary: #5cb85c;
 
 .container {
-  padding: 15px;
+  padding: 7.5px;
+  max-height: 450px;
+  max-width: 300px;
 }
 
 .product-thumbnail {
@@ -11,14 +13,12 @@ $primary: #5cb85c;
 
 .product-img {
   background-color: rgb(233, 233, 233);
-  height: 350px;
+  height: 300px;
 }
 
 .img-text {
   width: 100%;
   height: 100%;
-  text-align: center;
-  padding-top: 50%;
   font-size: 30px;
 }
 
@@ -42,11 +42,8 @@ $primary: #5cb85c;
 }
 
 .product-icons {
-  padding: 10px;
-  width: 100%;
-  height: 55%;
   font-weight: 50;
-  transition: all 3s ease;
+  padding: 5px;
 }
 
 // .product-icons:hover {

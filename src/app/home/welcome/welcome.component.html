@@ -39,13 +39,13 @@
 
   <mat-tab-group mat-align-tabs="center">
     <mat-tab label="TILBUD">
-      <app-product-thumbnail></app-product-thumbnail>
+      <app-product-list-view></app-product-list-view>
     </mat-tab>
     <mat-tab label="NYE PRODUKTER">
-      <app-product-thumbnail></app-product-thumbnail>
+      <app-product-list-view></app-product-list-view>
     </mat-tab>
     <mat-tab label="MEST POPULÆRE">
-      <app-product-thumbnail></app-product-thumbnail>
+      <app-product-list-view></app-product-list-view>
     </mat-tab>
   </mat-tab-group>
 
@@ -53,8 +53,10 @@
   <br />
 </section>
 
-<section>
-  <div class="wrapper">
-    <!-- <img class="bg-img" src="../../../assets/images/puzzles/welcome_1.jpg" /> -->
-  </div>
+<section class="media-container">
+  <app-media-view></app-media-view>
+</section>
+
+<section class="newsletter-container">
+  <app-newsletter-view></app-newsletter-view>
 </section>

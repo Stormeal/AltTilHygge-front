@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import {
   faTruck,
   faAward,
@@ -7,11 +6,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-welcome',
-  templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.scss'],
+  selector: 'app-media-view',
+  templateUrl: './media-view.component.html',
+  styleUrls: ['./media-view.component.scss'],
 })
-export class WelcomeComponent implements OnInit {
+export class MediaViewComponent implements OnInit {
   faTruck = faTruck;
   faAward = faAward;
   faHandshake = faHandshake;

@@ -9,7 +9,7 @@ $primary: #5cb85c;
 }
 .exclusive-products {
   padding-top: 30px;
-  min-height: 800px;
+  min-height: 450px;
 }
 .h2-text {
   text-align: center;
@@ -36,6 +36,7 @@ $primary: #5cb85c;
   letter-spacing: 0.07em;
   font-weight: 400;
 }
+
 .categories-banner {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -80,6 +81,17 @@ $primary: #5cb85c;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.media-container {
+  padding: 15px;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+.newsletter-container {
+  margin-top: 30px;
+  padding: 15px;
 }
 
 ::ng-deep .mat-tab-group.mat-primary .mat-ink-bar {

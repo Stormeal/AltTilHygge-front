@@ -6,6 +6,7 @@ import {
   animate,
   transition,
 } from '@angular/animations';
+import * as data from '../../shared/products.json';
 
 @Component({
   selector: 'app-product-thumbnail',
@@ -33,8 +34,11 @@ import {
 export class ProductThumbnailComponent implements OnInit {
   @Output() iconVisible = false;
   show = false;
+  products;
 
-  constructor() {}
+  constructor() {
+    this.products = data.products;
+  }
 
   ngOnInit(): void {}
 
