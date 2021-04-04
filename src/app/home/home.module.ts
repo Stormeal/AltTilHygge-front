@@ -9,9 +9,10 @@ import { ProductThumbnailComponent } from './product-thumbnail/product-thumbnail
 import { ProductListViewComponent } from './product-list-view/product-list-view.component';
 import { MediaViewComponent } from './welcome/media-view/media-view.component';
 import { NewsletterViewComponent } from './welcome/newsletter-view/newsletter-view.component';
+import { CategoriesComponent } from './welcome/categories/categories.component';
 
 @NgModule({
-  declarations: [WelcomeComponent, ProductThumbnailComponent, ProductListViewComponent, MediaViewComponent, NewsletterViewComponent],
+  declarations: [WelcomeComponent, ProductThumbnailComponent, ProductListViewComponent, MediaViewComponent, NewsletterViewComponent, CategoriesComponent],
   imports: [HomeRoutingModule, MaterialModule, SharedModule],
 })
 export class HomeModule {}

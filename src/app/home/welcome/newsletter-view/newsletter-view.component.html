@@ -1,1 +1,21 @@
-<p>newsletter-view works!</p>
+<div class="newsletter-container">
+  <div fxLayout="row">
+    <span fxFlex="50%">
+      <h2>ALDRIG OVERSE ET TILBUD</h2>
+      <h3>
+        Ved at tilmelde dig vores nyhedsbrev overser du aldrig et tilbud igen.
+      </h3>
+    </span>
+    <div fxFlex="50%" fxLayoutAlign="end center">
+      <form>
+        <mat-form-field class="newsletter-input">
+          <mat-label>Indtast din email</mat-label>
+          <input matInput placeholder="eksempel@eksempel.dk" />
+        </mat-form-field>
+        <button class="newsletter-btn" mat-raised-button>
+          TILMELD NYHEDSBREV
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
