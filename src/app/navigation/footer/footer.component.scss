@@ -51,6 +51,10 @@ li {
   font-size: 24px;
 }
 
+.footer-icons:hover {
+  color: $primary;
+}
+
 .info-icon {
   margin-top: 2px;
   padding-right: 5px;
@@ -71,7 +75,7 @@ hr {
   background: none repeat scroll 0 0 $primary;
   content: "";
   display: flex;
-  height: 5px;
-  position: absolute;
-  width: 100px;
+  height: 2px;
+  position: relative;
+  width: 20%;
 }

@@ -45,6 +45,7 @@ export class FooterComponent implements OnInit {
   faInstagram = faInstagram;
 
   show = false;
+  show1 = false;
 
   constructor() {}
 
