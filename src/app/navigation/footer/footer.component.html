@@ -1,1 +1,123 @@
-<p>footer works!</p>
+<hr />
+<section class="footer-container">
+  <div fxLayout="row">
+    <div class="footer-section" fxFlex="35%">
+      <img
+        class="logo-footer"
+        src="../../../assets/images/logo/alttilhygge-2.png"
+      />
+      <span>
+        <p class="footer-section-txt">
+          Her ved Alt Til Hygge begiver vi os i god kvalitet til en fornuftig
+          pris med hurtig levering. For at sikre os dette, er vi med dig hele
+          vejen, og på intet tidspunkt skal du som kunde føle, at du mangler
+          noget information.
+        </p>
+        <p class="footer-section-txt">
+          Du er altid velkommen til at kontake os hvis du har spørgsmål
+        </p>
+      </span>
+      <span class="footer-icons" fxLayout="row" fxLayoutGap="45px">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-google-plus-g"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </span>
+    </div>
+    <div class="footer-section" fxFlex="20%">
+      <h2>Sortiment</h2>
+      <ul>
+        <li class="link-effect" (mouseenter)="toggle()" (mouseleave)="toggle()">
+          Diamond Paintings
+          <span class="underbar" [@popOverState]="stateName"></span>
+        </li>
+        <li class="link-effect" (mouseenter)="toggle()" (mouseleave)="toggle()">
+          Painting by Numbers
+          <span class="underbar" [@popOverState]="stateName"></span>
+        </li>
+        <li class="link-effect" (mouseenter)="toggle()" (mouseleave)="toggle()">
+          Puslespil
+          <span class="underbar" [@popOverState]="stateName"></span>
+        </li>
+        <li class="link-effect" (mouseenter)="toggle()" (mouseleave)="toggle()">
+          Badeænder
+          <span class="underbar" [@popOverState]="stateName"></span>
+        </li>
+        <li class="link-effect" (mouseenter)="toggle()" (mouseleave)="toggle()">
+          Julepynt
+          <span class="underbar" [@popOverState]="stateName"></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-section" fxFlex="20%">
+      <h2>Sortiment</h2>
+      <ul>
+        <li>Diamond Paintings</li>
+        <li>Painting by Numbers</li>
+        <li>Puslespil</li>
+        <li>Badeænder</li>
+        <li>Julepynt</li>
+      </ul>
+    </div>
+
+    <div class="footer-section" fxFlex="25%">
+      <h2>Butik Information</h2>
+
+      <table>
+        <tr>
+          <td fxLayoutAlign="start start">
+            <i class="info-icon fa fa-map-marker-alt"></i>
+          </td>
+          <td>
+            <p>Marielundvej 28, 1</p>
+            <p>2730 Herlev</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td fxLayoutAlign="start start">
+            <i class="info-icon fa fa-phone-alt"></i>
+          </td>
+          <td>
+            <p>+45 4085 7663</p>
+          </td>
+        </tr>
+        <tr>
+          <td fxLayoutAlign="start start">
+            <i class="info-icon fa fa-envelope"></i>
+          </td>
+          <td>
+            <p>kontakt@alttilhygge.dk</p>
+          </td>
+        </tr>
+      </table>
+
+      <!-- <div fxLayout="row">
+        <div fxLayout="column" fxLayoutGap="10px" class="info-icon">
+          <i class="info-icon fa fa-map-marker-alt"></i>
+          <br />
+          <i class="info-icon fa fa-map-marker-alt"></i>
+          <i class="info-icon fa fa-map-marker-alt"></i>
+          <i class="info-icon fa fa-map-marker-alt"></i>
+        </div>
+
+        <div fxLayout="column">
+          <p>Marielundvej 28, 1</p>
+          <p>2730 Herlev</p>
+        </div>
+      </div> -->
+
+      <!-- <ul>
+        <li fxLayout="row" fxLayoutGap="5px">
+          <i class="info-icon fa fa-map-marker-alt"></i>
+
+        </li>
+        <li>Painting by Numbers</li>
+        <li>Puslespil</li>
+        <li>Badeænder</li>
+        <li>Julepynt</li>
+      </ul> -->
+    </div>
+  </div>
+</section>
