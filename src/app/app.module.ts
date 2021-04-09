@@ -13,8 +13,15 @@ import { SidenavComponent } from './navigation/sidenav/sidenav.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { FooterComponent } from './navigation/footer/footer.component';
 
+import { WelcomeService } from './home/welcome/welcome.service';
+
 @NgModule({
-  declarations: [AppComponent, SidenavComponent, HeaderComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    SidenavComponent,
+    HeaderComponent,
+    FooterComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -22,7 +29,7 @@ import { FooterComponent } from './navigation/footer/footer.component';
     MaterialModule,
     FlexLayoutModule,
   ],
-  providers: [],
+  providers: [WelcomeService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

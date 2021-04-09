@@ -41,6 +41,7 @@ li {
 }
 
 .footer-section-txt {
+  color: #777;
   width: 350px;
   padding-left: 5px;
   opacity: 90%;
@@ -49,6 +50,7 @@ li {
 .footer-icons {
   padding: 7.5px;
   font-size: 24px;
+  transition: 1s;
 }
 
 .footer-icons:hover {
@@ -68,14 +70,23 @@ hr {
   background-color: $primary;
 }
 
-.link-effect {
+a {
+  color: #777;
+  letter-spacing: 0.07em;
 }
 
-.underbar {
+a:after {
   background: none repeat scroll 0 0 $primary;
+  bottom: 0;
   content: "";
-  display: flex;
+  display: block;
   height: 2px;
-  position: relative;
+  left: 50%;
+  background: $primary;
+  transition: width 0.6s ease 0s, left 0.6s ease 0s;
+  width: 0;
+}
+a:hover:after {
   width: 20%;
+  left: 0;
 }

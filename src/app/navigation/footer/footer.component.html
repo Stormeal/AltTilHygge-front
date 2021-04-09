@@ -27,37 +27,20 @@
     <div class="footer-section" fxFlex="20%">
       <h2>Sortiment</h2>
       <ul>
-        <li class="link-effect" (mouseenter)="toggle()" (mouseleave)="toggle()">
-          Diamond Paintings
-          <span class="underbar" [@popOverState]="stateName"></span>
-        </li>
-        <li class="link-effect" (mouseenter)="toggle()" (mouseleave)="toggle()">
-          Painting by Numbers
-          <span class="underbar" [@popOverState]="stateName"></span>
-        </li>
-        <li class="link-effect" (mouseenter)="toggle()" (mouseleave)="toggle()">
-          Puslespil
-          <span class="underbar" [@popOverState]="stateName"></span>
-        </li>
-        <li class="link-effect" (mouseenter)="toggle()" (mouseleave)="toggle()">
-          Badeænder
-          <span class="underbar" [@popOverState]="stateName"></span>
-        </li>
-        <li class="link-effect" (mouseenter)="toggle()" (mouseleave)="toggle()">
-          Julepynt
-          <span class="underbar" [@popOverState]="stateName"></span>
+        <li class="link-effect" *ngFor="let category of categories">
+          <a>
+            {{ category.name }}
+          </a>
         </li>
       </ul>
     </div>
 
     <div class="footer-section" fxFlex="20%">
-      <h2>Sortiment</h2>
+      <h2>Kontakt</h2>
       <ul>
-        <li>Diamond Paintings</li>
-        <li>Painting by Numbers</li>
-        <li>Puslespil</li>
-        <li>Badeænder</li>
-        <li>Julepynt</li>
+        <li class="link-effect" *ngFor="let contact of contacts">
+          <a>{{ contact.name }}</a>
+        </li>
       </ul>
     </div>
 

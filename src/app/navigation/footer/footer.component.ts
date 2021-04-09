@@ -13,6 +13,8 @@ import {
   animate,
   transition,
 } from '@angular/animations';
+import { Category } from 'src/app/shared/category.model';
+import { WelcomeService } from 'src/app/home/welcome/welcome.service';
 
 @Component({
   selector: 'app-footer',
@@ -43,13 +45,18 @@ export class FooterComponent implements OnInit {
   faGooglePlusG = faGooglePlusG;
   faTwitter = faTwitter;
   faInstagram = faInstagram;
+  categories: Category[] = [];
+  contacts: Category[] = [];
 
   show = false;
   show1 = false;
 
-  constructor() {}
+  constructor(private categoryService: WelcomeService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.categories = this.categoryService.getCategories();
+    this.contacts = this.categoryService.getContacts();
+  }
 
   get stateName() {
     return this.show ? 'show' : 'hide';

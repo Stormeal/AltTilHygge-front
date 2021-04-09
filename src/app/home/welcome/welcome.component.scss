@@ -4,8 +4,24 @@ $primary: #5cb85c;
   background-color: $primary;
 }
 
+.img-container {
+  position: relative;
+  text-align: center;
+}
+
 .banner-img {
   width: 100%;
+  max-height: 600px;
+}
+
+.centered {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 23px;
+  color: #5cb85c;
 }
 .exclusive-products {
   padding-top: 30px;

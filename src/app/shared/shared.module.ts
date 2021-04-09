@@ -4,9 +4,16 @@ import { FormsModule } from '@angular/forms';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatCarouselModule } from 'ng-mat-carousel';
 
 @NgModule({
-  imports: [CommonModule, FlexLayoutModule, FormsModule, FontAwesomeModule],
+  imports: [
+    MatCarouselModule.forRoot(),
+    CommonModule,
+    FlexLayoutModule,
+    FormsModule,
+    FontAwesomeModule,
+  ],
   exports: [CommonModule, FlexLayoutModule, FormsModule, FontAwesomeModule],
   declarations: [],
   providers: [],

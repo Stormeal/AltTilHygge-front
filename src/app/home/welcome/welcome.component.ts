@@ -5,6 +5,9 @@ import {
   faAward,
   faHandshake,
 } from '@fortawesome/free-solid-svg-icons';
+import { Category } from 'src/app/shared/category.model';
+import { WelcomeService } from './welcome.service';
+import { MatCarousel, MatCarouselComponent } from 'ng-mat-carousel';
 
 @Component({
   selector: 'app-welcome',
@@ -16,7 +19,7 @@ export class WelcomeComponent implements OnInit {
   faAward = faAward;
   faHandshake = faHandshake;
 
-  constructor() {}
+  constructor(private categoryService: WelcomeService) {}
 
   ngOnInit(): void {}
 }

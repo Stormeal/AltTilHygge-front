@@ -10,9 +10,18 @@ import { ProductListViewComponent } from './product-list-view/product-list-view.
 import { MediaViewComponent } from './welcome/media-view/media-view.component';
 import { NewsletterViewComponent } from './welcome/newsletter-view/newsletter-view.component';
 import { CategoriesComponent } from './welcome/categories/categories.component';
+import { WelcomeService } from './welcome/welcome.service';
 
 @NgModule({
-  declarations: [WelcomeComponent, ProductThumbnailComponent, ProductListViewComponent, MediaViewComponent, NewsletterViewComponent, CategoriesComponent],
+  declarations: [
+    WelcomeComponent,
+    ProductThumbnailComponent,
+    ProductListViewComponent,
+    MediaViewComponent,
+    NewsletterViewComponent,
+    CategoriesComponent,
+  ],
   imports: [HomeRoutingModule, MaterialModule, SharedModule],
+  providers: [WelcomeService],
 })
 export class HomeModule {}
