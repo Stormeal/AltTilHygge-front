@@ -1,0 +1,37 @@
+<section class="filter-list-container">
+  <div class="category-list" fxLayout="column">
+    <!-- CATEGORY START -->
+    <div class="container" fxLayoutAlign="center center">
+      <mat-expansion-panel class="expansion-panel-toggle" [expanded]="true">
+        <mat-expansion-panel-header class="header">
+          Kategorier
+        </mat-expansion-panel-header>
+
+        <div class="category-list-wrapper" *ngFor="let category of categories">
+          <div class="category-list-items">
+            <a>{{ category.name }}</a>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </div>
+    <!-- CATEGORY END -->
+
+    <div class="container" fxLayoutAlign="center center">
+      <mat-expansion-panel class="expansion-panel-toggle" [expanded]="true">
+        <mat-expansion-panel-header class="header">
+          Mærker
+        </mat-expansion-panel-header>
+
+        <div class="category-list-wrapper" *ngFor="let brand of brands">
+          <div class="category-list-items">
+            <!-- <a>{{ brand.name }}</a> -->
+
+            <mat-checkbox color="primary">
+              {{ brand.name }}
+            </mat-checkbox>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </div>
+  </div>
+</section>

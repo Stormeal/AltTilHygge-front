@@ -1,5 +1,6 @@
 import { createUrlResolverWithoutPackagePrefix } from '@angular/compiler';
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +11,7 @@ export class HeaderComponent implements OnInit {
   @Output() sidenavToggle = new EventEmitter<void>();
   @Output() timedOutCloser: any = new EventEmitter<void>();
 
-  constructor() {}
+  constructor(private route: Router) {}
 
   ngOnInit(): void {}
 
@@ -29,5 +30,9 @@ export class HeaderComponent implements OnInit {
     this.timedOutCloser = setTimeout(() => {
       trigger.closeMenu();
     }, 50);
+  }
+
+  goToCollection() {
+    this.route.navigate(['home/shop/collection']);
   }
 }

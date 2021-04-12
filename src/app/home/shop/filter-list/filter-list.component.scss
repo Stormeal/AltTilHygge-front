@@ -1,0 +1,51 @@
+$primary: #5cb85c;
+
+a {
+  letter-spacing: 0.07em;
+  color: #777;
+  cursor: pointer;
+}
+
+mat-checkbox {
+  color: #777;
+  letter-spacing: 0.07em;
+}
+
+.header {
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.category-list {
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.container {
+  padding: 30px;
+}
+.expansion-panel-toggle {
+  width: 100%;
+}
+
+.category-list-wrapper {
+  max-height: 275px;
+}
+.category-list-items {
+  padding: 15px;
+}
+
+// overwrite the checkbox background
+::ng-deep .mat-checkbox-checked .mat-checkbox-background,
+.mat-checkbox-indeterminate .mat-checkbox-background {
+  background-color: $primary !important;
+}
+
+// overwrite the ripple overlay on hover and click
+::ng-deep
+  .mat-checkbox:not(.mat-checkbox-disabled)
+  .mat-checkbox-ripple
+  .mat-ripple-element {
+  background-color: $primary !important;
+}

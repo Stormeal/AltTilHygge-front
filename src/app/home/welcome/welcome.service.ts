@@ -17,11 +17,41 @@ export class WelcomeService {
     { id: 5, name: 'Privatlivspolitik' },
   ];
 
+  private brands: Category[] = [
+    { id: 1, name: 'Anne Stokes' },
+    { id: 2, name: 'Crystal Art' },
+    { id: 3, name: 'Crystal Art Ur' },
+    { id: 4, name: 'Crystal Card' },
+    { id: 5, name: 'Disney' },
+    { id: 6, name: 'Graham Thompson' },
+    { id: 7, name: 'Jan van Haasteren' },
+    { id: 8, name: 'Josephine Wall' },
+    { id: 9, name: 'LED Crystal Art' },
+    { id: 10, name: 'Lori Schory' },
+    { id: 11, name: 'Personligt Motiv' },
+    { id: 12, name: 'Wasgij' },
+  ];
+
+  private sizesPuzzle: Category[] = [
+    { id: 1, name: '500 Brikker' },
+    { id: 1, name: '1000 Brikker' },
+    { id: 1, name: '1500 Brikker' },
+    { id: 1, name: '2000 Brikker' },
+    { id: 1, name: '3000 Brikker' },
+    { id: 1, name: '4000 Brikker' },
+    { id: 1, name: '6000-18000 Brikker' },
+    { id: 1, name: 'Puslespil til Børn' },
+  ];
+
   public getCategories() {
     return this.categories.slice();
   }
 
   public getContacts() {
     return this.contact.slice();
+  }
+
+  public getBrands() {
+    return this.brands.slice();
   }
 }
