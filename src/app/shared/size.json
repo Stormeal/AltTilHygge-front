@@ -1,0 +1,4 @@
+{
+  "sizes_puzzle": ["10x10", "20x10", "30x20", "40x40", "50x50"],
+  "sizes_diamond": ["Small", "Medium", "Large", "Extra-Large"]
+}

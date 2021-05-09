@@ -1,7 +1,7 @@
 <section class="filter-list-container">
   <div class="category-list" fxLayout="column">
     <!-- CATEGORY START -->
-    <div class="container" fxLayoutAlign="center center">
+    <div class="container" style="padding-top: 0" fxLayoutAlign="center center">
       <mat-expansion-panel class="expansion-panel-toggle" [expanded]="true">
         <mat-expansion-panel-header class="header">
           Kategorier
@@ -16,19 +16,59 @@
     </div>
     <!-- CATEGORY END -->
 
+    <!-- BRANDS START -->
     <div class="container" fxLayoutAlign="center center">
       <mat-expansion-panel class="expansion-panel-toggle" [expanded]="true">
         <mat-expansion-panel-header class="header">
           Mærker
         </mat-expansion-panel-header>
 
-        <div class="category-list-wrapper" *ngFor="let brand of brands">
-          <div class="category-list-items">
-            <!-- <a>{{ brand.name }}</a> -->
+        <perfect-scrollbar class="scrollbar">
+          <div class="category-list-wrapper" *ngFor="let brand of brands">
+            <div class="category-list-items">
+              <mat-checkbox color="primary">
+                {{ brand.name }}
+              </mat-checkbox>
+            </div>
+          </div>
+        </perfect-scrollbar>
+      </mat-expansion-panel>
+    </div>
 
-            <mat-checkbox color="primary">
-              {{ brand.name }}
-            </mat-checkbox>
+    <!-- BRANDS END -->
+
+    <!-- SIZE START -->
+    <div class="container" fxLayoutAlign="center center">
+      <mat-expansion-panel class="expansion-panel-toggle" [expanded]="true">
+        <mat-expansion-panel-header class="header">
+          Størrelse
+        </mat-expansion-panel-header>
+
+        <div class="category-list-wrapper" *ngFor="let size of puzzleSize">
+          <div class="category-list-items">
+            <a>{{ size }}</a>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </div>
+    <!-- SIZE END -->
+
+    <div class="container" fxLayoutAlign="center center">
+      <mat-expansion-panel class="expansion-panel-toggle" [expanded]="true">
+        <mat-expansion-panel-header class="header">
+          Pris
+        </mat-expansion-panel-header>
+
+        <div class="category-list-wrapper">
+          <div class="category-list-items">
+            <mat-slider
+              thumbLabel
+              tickInterval="1000"
+              step="50"
+              min="0"
+              max="1000"
+              aria-label="units"
+            ></mat-slider>
           </div>
         </div>
       </mat-expansion-panel>

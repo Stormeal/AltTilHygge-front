@@ -25,6 +25,7 @@ mat-checkbox {
 .container {
   padding: 30px;
 }
+
 .expansion-panel-toggle {
   width: 100%;
 }
@@ -34,6 +35,10 @@ mat-checkbox {
 }
 .category-list-items {
   padding: 15px;
+}
+
+.scrollbar {
+  height: 320px;
 }
 
 // overwrite the checkbox background
