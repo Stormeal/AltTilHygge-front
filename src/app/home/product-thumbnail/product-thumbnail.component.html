@@ -1,56 +1,53 @@
-<div class="container">
-  <div
-    class="product-thumbnail"
-    (mouseenter)="toggle()"
-    (mouseleave)="toggle()"
-  >
-    <div class="product-img">
-      <div class="img-text" fxLayoutAlign="center center">
+<div class="product-thumbnail" (mouseenter)="toggle()" (mouseleave)="toggle()">
+  <div class="product-img">
+    <!-- <div class="img-text" fxLayoutAlign="center center">
         <p>300 x 300</p>
-      </div>
-
-      <div
-        class="product-icons"
-        fxFlex
-        fxLayout="column"
-        fxLayoutGap="10px"
-        fxLayoutAlign="end end"
-        [@popOverState]="stateName"
+      </div> -->
+    <img
+      class="img"
+      src="../../../assets/images/product/9974TvLIR_SJP4Go9b6C_g-bJP6PaArEeuc--pwoVEcwA.png"
+    />
+    <div
+      class="product-icons"
+      fxFlex
+      fxLayout="column"
+      fxLayoutGap="10px"
+      fxLayoutAlign="end end"
+      [@popOverState]="stateName"
+    >
+      <mat-icon class="icon material-icons material-icons-outlined">
+        shopping_cart
+      </mat-icon>
+      <mat-icon class="icon material-icons material-icons-outlined"
+        >favorite_border</mat-icon
       >
-        <mat-icon class="material-icons material-icons-outlined">
-          shopping_cart
-        </mat-icon>
-        <mat-icon class="material-icons material-icons-outlined"
-          >favorite_border</mat-icon
-        >
-        <mat-icon class="material-icons material-icons-outlined"
-          >search</mat-icon
-        >
-        <mat-icon class="material-icons material-icons-outlined"
-          >refresh</mat-icon
-        >
-      </div>
+      <mat-icon class="icon material-icons material-icons-outlined"
+        >search</mat-icon
+      >
+      <mat-icon class="icon material-icons material-icons-outlined"
+        >refresh</mat-icon
+      >
     </div>
-    <div class="product-footer">
-      <span fxLayout="row" fxLayoutAlign="start" class="star-icon">
-        <a>
-          <mat-icon>star_rate</mat-icon>
-        </a>
-        <a>
-          <mat-icon>star_rate</mat-icon>
-        </a>
-        <a>
-          <mat-icon>star_rate</mat-icon>
-        </a>
-        <a>
-          <mat-icon>star_rate</mat-icon>
-        </a>
-        <a>
-          <mat-icon>star_rate</mat-icon>
-        </a>
-      </span>
-      <p class="product-title">Product Title</p>
-      <p class="product-price">200,00 kr</p>
-    </div>
+  </div>
+  <div class="product-footer">
+    <span fxLayout="row" fxLayoutAlign="start" class="star-icon">
+      <a>
+        <mat-icon>star_rate</mat-icon>
+      </a>
+      <a>
+        <mat-icon>star_rate</mat-icon>
+      </a>
+      <a>
+        <mat-icon>star_rate</mat-icon>
+      </a>
+      <a>
+        <mat-icon>star_rate</mat-icon>
+      </a>
+      <a>
+        <mat-icon>star_rate</mat-icon>
+      </a>
+    </span>
+    <p class="product-title">Product Title</p>
+    <p class="product-price">200,00 kr</p>
   </div>
 </div>

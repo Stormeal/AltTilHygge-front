@@ -1,5 +1,19 @@
-<div fxLayout="row wrap" fxLayoutAlign="center center">
-  <div class="list-view" *ngFor="let product of products" fxLayoutWrap="wrap">
+<!-- <div fxLayout="row wrap" fxLayoutAlign="center center">
+  <div
+    fxFlex="25"
+    fxFlex.sm="33"
+    class="list-view"
+    *ngFor="let product of products"
+    fxLayoutWrap="wrap"
+  >
     <app-product-thumbnail></app-product-thumbnail>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="parent">
+    <div class="child" *ngFor="let product of products">
+      <app-product-thumbnail></app-product-thumbnail>
+    </div>
   </div>
 </div>

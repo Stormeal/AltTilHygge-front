@@ -13,6 +13,7 @@ import { CategoriesComponent } from './welcome/categories/categories.component';
 import { WelcomeService } from './welcome/welcome.service';
 import { CollectionComponent } from './shop/collection/collection.component';
 import { FilterListComponent } from './shop/filter-list/filter-list.component';
+import { ProductComponent } from './shop/product/product.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FilterListComponent } from './shop/filter-list/filter-list.component';
     CategoriesComponent,
     CollectionComponent,
     FilterListComponent,
+    ProductComponent,
   ],
   imports: [HomeRoutingModule, MaterialModule, SharedModule],
   providers: [WelcomeService],

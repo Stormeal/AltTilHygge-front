@@ -9,6 +9,11 @@ $primary: #5cb85c;
   text-align: center;
 }
 
+.img-text {
+  padding: 15px;
+  height: 100%;
+}
+
 .banner-img {
   width: 100%;
   min-height: 600px;
@@ -40,7 +45,6 @@ $primary: #5cb85c;
   text-transform: uppercase;
   font-size: 23px;
   color: #5cb85c;
-  height: 150px;
   justify-content: center;
   align-items: center;
   background-color: white;

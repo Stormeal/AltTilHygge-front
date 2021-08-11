@@ -9,18 +9,47 @@
     <a [matMenuTriggerFor]="menu" style="padding-top: 36px">
       SHOP
       <mat-icon>keyboard_arrow_down</mat-icon>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item (click)="goToCollection()">Item 1</button>
-        <button mat-menu-item>Item 2</button>
+      <mat-menu class="matMenu" #menu="matMenu">
+        <div fxLayout="row" fxLayoutGap="15px">
+          <div class="matMenu-item-wrapper" fxLayout="column">
+            <p>Diamond Paintings</p>
+            <a class="matMenu-item" (click)="goToCollection()"> Nyheder </a>
+            <a class="matMenu-item" (click)="goToCollection()">
+              Firkantet Krystaller
+            </a>
+            <a class="matMenu-item" (click)="goToCollection()">
+              Runde Krystaller
+            </a>
+            <a class="matMenu-item" (click)="goToCollection()">
+              Personligt Motiv
+            </a>
+            <a class="matMenu-item" (click)="goToCollection()"> Tilbehør </a>
+          </div>
+
+          <div class="matMenu-item-wrapper" fxLayout="column">
+            <p>Diamond Paintings</p>
+            <a class="matMenu-item" (click)="goToCollection()"> Nyheder </a>
+            <a class="matMenu-item" (click)="goToCollection()">
+              Firkantet Krystaller
+            </a>
+            <a class="matMenu-item" (click)="goToCollection()">
+              Runde Krystaller
+            </a>
+            <a class="matMenu-item" (click)="goToCollection()">
+              Personligt Motiv
+            </a>
+            <a class="matMenu-item" (click)="goToCollection()"> Tilbehør </a>
+          </div>
+        </div>
       </mat-menu>
     </a>
     <a routerLink="/home/contact-us">KONTAKT OS</a>
   </div>
   <div fxFlex fxLayoutAlign="center center">
     <!-- <a routerLink="/">alt til hygge</a> -->
-    <a routerLink="#">
+    <div routerLink="#">
       <img class="logo" src="../../../assets/images/logo/alttilhygge-2.png" />
-    </a>
+    </div>
   </div>
   <div fxFlex fxLayoutAlign="end end"><a routerLink="/">CART</a></div>
 </mat-toolbar>
