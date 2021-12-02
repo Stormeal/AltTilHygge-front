@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Category } from 'src/app/shared/category.model';
-import { sizes_diamond, sizes_puzzle } from 'src/app/shared/size.json';
 import { WelcomeService } from '../../welcome/welcome.service';
 
 @Component({
@@ -11,8 +10,8 @@ import { WelcomeService } from '../../welcome/welcome.service';
 export class FilterListComponent implements OnInit {
   categories: Category[] = [];
   brands: Category[] = [];
-  puzzleSize = sizes_puzzle;
-  diamondSize = sizes_puzzle;
+  puzzleSize = ['10x10', '20x10', '30x20', '40x40', '50x50'];
+  diamondSize = ['Small', 'Medium', 'Large', 'Extra-Large'];
 
   constructor(private category: WelcomeService) {}
 
