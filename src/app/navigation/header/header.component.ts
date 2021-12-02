@@ -35,4 +35,8 @@ export class HeaderComponent implements OnInit {
   goToCollection() {
     this.route.navigate(['home/shop/collection']);
   }
+
+  goToHome() {
+    this.route.navigate(['home/welcome']);
+  }
 }
